@@ -1,0 +1,31 @@
+.wrapper {
+  padding: 0;
+}
+.header{
+    height:80px;
+    text-align:center;
+    background-color: #BDBDBD;
+}
+
+.footer{
+    background-color: #BDBDBD;
+    text-align: center;
+    padding: 20px 0;
+}
+.content {
+  background-color: #D8D8D8;
+  padding: 0;
+}
+.left-sec{
+    height: 500px;
+}
+.right-sec {
+  background-color: #E6E6E6;
+  height: 500px;
+}
+
+a{
+    display:block;
+    padding:5px;
+
+}

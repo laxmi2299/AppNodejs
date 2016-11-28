@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="Demo">
+  <head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <link href="src/bootstrap-3.3.7-dist/css/bootstrap.css" media="screen" rel="stylesheet" title="no title">
+    <link href="css/Style.css" rel="stylesheet"/>
+
+    <script charset="utf-8" src="src/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="src/angular.min.js"></script>
+    <script src="src/angular-route.min.js"></script>
+    <script src="src/script.js"></script>
+
+  </head>
+  <body>
+    <div class="col-md-12 wrapper">
+      <div class="header col-md-12">
+        <h1>
+          WebSite Header
+        </h1>
+      </div>
+      <div class="content col-md-12">
+        <div class="col-md-2 left-sec">
+          <a href="#/home">Home</a>
+          <a href="#/courses">Courses</a>
+          <a href="#/student">Student</a>
+        </div>
+        <div class="col-md-10 right-sec">
+          <ng-view></ng-view>
+        </div>
+      </div>
+      <div class="footer col-md-12">
+        <b>Website Footer</b>
+      </div>
+    </div>
+
+  </body>
+</html>

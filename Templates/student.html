@@ -1,0 +1,43 @@
+﻿<h1>List of Students</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Age
+      </th>
+      <th>
+        Address
+      </th>
+      <th>
+        Home
+      </th>
+      <th>
+        Fax
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="student in studentInfo">
+
+        <td>
+          {{student.firstName}} {{student.lastName}}
+        </td>
+        <td>
+          {{student.age}}
+        </td>
+        <td>
+          {{student.address.city}}, {{student.address.state}}, {{student.address.postalCode}}
+        </td>
+        <td>
+          {{student.phoneNumber[0].number}}
+        </td>
+        <td>
+          {{student.phoneNumber[1].number}}
+        </td>
+    </tr>
+  </tbody>
+  </table>
+
